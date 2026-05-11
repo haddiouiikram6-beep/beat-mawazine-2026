@@ -2,9 +2,10 @@ import { Nav } from "./components/com/nav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./components/style/index.css";
 import { Accueil } from "./pages/Accueil";
-import { Programme } from "./pages/Programme";
+import  Programme  from "./pages/Programme";
 import { MonPlanning } from "./pages/MonPlanning";
 import { Passeport } from "./pages/passeport";
+import DetailsArtist from "./pages/artistcard";
 
 
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/programme" element={<Programme/>} />
           <Route path="/Mon Planning" element={<MonPlanning />} />
           <Route path="/passeport" element={<Passeport/>} />
+          <Route path="/artist/:id" element={<DetailsArtist />} />
         </Routes>
       </div>
     </Router>
